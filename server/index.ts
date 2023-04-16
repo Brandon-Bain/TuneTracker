@@ -1,5 +1,6 @@
 import Fastify from "fastify";
 import { logger } from "@utils/logger";
+import routes from "./routes";
 
 (async () => {
   const fastify = Fastify();
@@ -12,6 +13,8 @@ import { logger } from "@utils/logger";
   fastify.get("/health", async (_req, res) => {
     res.code(204).send();
   });
+
+  fastify.register(routes);
 
   await fastify.ready();
   logger.info(`Server Listening on http://localhost:${SERVER_PORT}`);
