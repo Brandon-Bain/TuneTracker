@@ -5,6 +5,7 @@ jobs:
   - !PushRepository
     name: Push To Github
     remoteUrl: https://github.com/Brandon-Bain/test
+    userName: Brandon-Bain
     passwordSecret: github_token
     force: false
     condition: ALWAYS
