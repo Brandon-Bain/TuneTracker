@@ -1,0 +1,17 @@
+version: 21
+jobs:
+- name: Sync to Github
+  steps:
+  - !PushRepository
+    name: Push To Github
+    remoteUrl: https://github.com/Brandon-Bain/test
+    passwordSecret: github_token
+    force: false
+    condition: ALWAYS
+  triggers:
+  - !BranchUpdateTrigger
+    projects: TuneTracker
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 3600
