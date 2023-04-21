@@ -4,7 +4,7 @@ jobs:
   steps:
   - !PushRepository
     name: Push To Github
-    remoteUrl: https://github.com/Brandon-Bain/test
+    remoteUrl: https://github.com/Brandon-Bain/TuneTracker
     userName: Brandon-Bain
     passwordSecret: github_token
     force: false
