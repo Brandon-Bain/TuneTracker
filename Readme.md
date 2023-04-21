@@ -14,7 +14,7 @@ This app aims to provide a secure and easy to use system to track any relevant d
 - [ ] Create UI for searching data
 - [ ] Setup JWT authentication - server side
 - [ ] Setup JWT token storage - client side
-- [ ] Setup test suite
+- [ ] Setup Test Suite
 - [ ] Setup data storage alternatives
 - [ ] Location based weather data
 - [ ] Possible Draggy integration
