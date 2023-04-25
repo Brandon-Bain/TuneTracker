@@ -8,6 +8,7 @@
     "debugDev": "env LOG_LEVEL=debug nodemon server",
     "predev": "npm run build-client",
     "dev": "nodemon server",
+    "devDocker": "docker-compose up --build -V",
     "update": "ncu -i",
     "build-client": "cd client/ && npm run build",
     "build-server": "tsc",
