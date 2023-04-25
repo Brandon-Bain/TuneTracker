@@ -9,7 +9,9 @@
     "predev": "npm run build-client",
     "dev": "nodemon server",
     "update": "ncu -i",
-    "build-client": "cd client/ && npm run build"
+    "build-client": "cd client/ && npm run build",
+    "build-server": "tsc",
+    "installAll": "npm ci && cd client/ && npm ci"
   },
   "repository": {
     "type": "git",
@@ -46,7 +48,7 @@
     "watch": [
       "server"
     ],
-    "exec": "ts-node -r tsconfig-paths/register",
+    "exec": "ts-node",
     "ext": "ts"
   }
 }
