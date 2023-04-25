@@ -1,6 +1,6 @@
 import Fastify from "fastify";
 import path from "path";
-import { logger } from "@utils/logger";
+import { logger } from "./utils/logger";
 import routes from "./routes";
 
 (async () => {
