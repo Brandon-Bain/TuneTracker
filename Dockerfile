@@ -1,5 +1,5 @@
 # Setup Builder
-FROM node:18 AS builder
+FROM node:18.16.1-alpine AS builder
 WORKDIR /usr/src/app
 
 # Copy Server Files
@@ -20,7 +20,7 @@ RUN npm run build-server
 
 
 # Setup Runner
-FROM node:18 AS runner
+FROM node:18.16.1-alpine AS runner
 WORKDIR /usr/src/app
 
 # Copy compiled resources from builder to runner
