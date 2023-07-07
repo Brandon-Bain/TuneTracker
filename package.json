@@ -8,8 +8,11 @@
     "debugDev": "env LOG_LEVEL=debug nodemon server",
     "predev": "npm run build-client",
     "dev": "nodemon server",
+    "devDocker": "docker-compose up --build -V",
     "update": "ncu -i",
-    "build-client": "cd client/ && npm run build"
+    "build-client": "cd client/ && npm run build",
+    "build-server": "tsc",
+    "installAll": "npm ci && cd client/ && npm ci"
   },
   "repository": {
     "type": "git",
@@ -35,7 +38,6 @@
     "npm-check-updates": "^16.10.9",
     "prettier": "^2.8.7",
     "ts-node": "^10.9.1",
-    "tsconfig-paths": "^4.2.0",
     "typescript": "^4.9.5"
   },
   "nodemonConfig": {
@@ -47,7 +49,7 @@
     "watch": [
       "server"
     ],
-    "exec": "ts-node -r tsconfig-paths/register",
+    "exec": "ts-node",
     "ext": "ts"
   }
 }

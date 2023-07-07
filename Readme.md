@@ -6,7 +6,7 @@ This app aims to provide a secure and easy to use system to track any relevant d
 
 ## Roadmap
 
-- [ ] Setup Docker
+- [✔] Setup Docker
 - [ ] Create SQLite DB for storing data and tunes
 - [ ] Create APIs for storing data
 - [ ] Create UI for storing data

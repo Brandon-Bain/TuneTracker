@@ -1,6 +1,6 @@
 import { adapters } from "../../adapterBindings";
 import ExampleSchema from "./schema";
-import { ExampleData } from "@useCases/example";
+import { ExampleData } from "../../useCases/example";
 import type { FastifyInstance, FastifyRequest, FastifyReply } from "fastify";
 
 export default async (fastify: FastifyInstance) => {
